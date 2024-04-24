@@ -1,0 +1,50 @@
+* {
+    margin:0;
+    padding:0;
+    color: #8B7969;
+}
+
+body {
+    background: #F1ECE7;
+}
+
+.header {
+    background: #fff;
+    border-bottom: 1px solid #E0DFDE;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+}
+
+.header-utilities {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header__logo {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Inika", serif;
+    font-style: normal;
+}
+
+.header-nav {
+    position: absolute;
+    right: 10%;
+}
+
+.header-nav__button {
+    padding: 5px 20px;
+    border: none;
+    background: #F0F0F0;
+    border: 1px solid #D9C6B5;
+    font-size: 14px;
+    color: #D9C6B5;
+    cursor: pointer;
+}
+
