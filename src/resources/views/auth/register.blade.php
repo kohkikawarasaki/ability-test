@@ -7,7 +7,7 @@
 @section('content')
 
     <div class="register__content">
-        <div class="register-form__heading">
+        <div class="register__heading">
             <h2>Register</h2>
         </div>
         <form action="/register" class="form" method="POST">
