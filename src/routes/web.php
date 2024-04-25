@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\InquiryController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,5 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware('auth')->group(function () {
-    Route::get('/', [InquiryController::class, 'index']);
+    Route::get('/', [ContactController::class, 'index']);
+    Route::get('/admin', [ContactController::class, 'admin']);
+    Route::get('/admin/search', [ContactController::class, 'search']);
+    Route::delete('/admin/delete/', [ContactController::class, 'destroy']);
 });

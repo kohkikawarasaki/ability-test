@@ -1,0 +1,143 @@
+.admin__content {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    max-width: 1230px;
+}
+
+.admin__heading {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.admin__heading h2 {
+    font-family: "Inika", serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.search-from {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.search-form__item {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.search-form__item-input {
+    margin-right: 10px;
+    padding: 10px 20px;
+    width: 40%;
+    background: #FBFBFB;
+    border: 1px solid #E3DED9;
+    color: #BEB1A6;
+}
+
+.search-form__item-select {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background: #F4F4F4;
+    border: 1px solid #E3DED9;
+    color: #8B7969;
+    /* appearance: none; */
+}
+
+.search-form__button-submit {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background: #82756A;
+    border: 1px solid #8B7969;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-form__button-reset {
+    padding: 10px 20px;
+    background: #D9C6B5;
+    border: 1px solid #D9C6B5;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact__heading {
+    margin: 0 auto;
+    padding: 30px 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-export__button {
+    padding: 10px 20px;
+    border: none;
+    background: #E1DBD6;
+    color: #8B7969;
+    cursor: pointer;
+}
+
+svg.w-5.h-5 {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-table {
+    margin: 0 auto;
+    width: 90%;
+    text-align: left;
+}
+
+.contact-table__inner {
+    width: 100%;
+}
+
+.contact-table__row {
+    border: 1px solid #E0DFDE;
+}
+
+.contact-table__row:first-of-type {
+    background: #8B7969;
+}
+
+.contact-table__header {
+    padding: 15px 30px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.contact-table__header-span {
+    color: #fff;
+}
+
+.contact-table__item {
+    padding: 15px 30px;
+    text-align: left;
+}
+
+.contact-table__item:nth-child(1) {
+    width: 18%;
+}
+.contact-table__item:nth-child(2) {
+    width: 10%;
+}
+.contact-table__item:nth-child(3) {
+    width: 30%;
+}
+.contact-table__item:nth-child(4) {
+    width: 30%;
+}
+.contact-table__item:nth-child(5) {
+    width: 12%;
+}
+
+.contact-table__button {
+    padding: 5px 20px;
+    background: #F4F4F4;
+    border: 1px solid #D9C6B5;
+    color: #D9C6B5;
+    cursor: pointer;
+}
