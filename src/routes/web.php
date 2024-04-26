@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth')->group(function () {
     Route::get('/', [ContactController::class, 'index']);
+    Route::post('/confirm', [ContactController::class, 'confirm']);
+    Route::get('/thanks', [ContactController::class, 'thanks']);
+    Route::post('/thanks', [ContactController::class, 'store']);
     Route::get('/admin', [ContactController::class, 'admin']);
     Route::get('/admin/search', [ContactController::class, 'search']);
     Route::delete('/admin/delete/', [ContactController::class, 'destroy']);
