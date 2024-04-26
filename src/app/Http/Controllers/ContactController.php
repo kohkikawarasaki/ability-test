@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ContactRequest;
 use App\Models\Category;
 use App\Models\Contact;
 use Illuminate\Http\Request;
@@ -10,7 +11,34 @@ class ContactController extends Controller
 {
     public function index()
     {
-        return view('index');
+        $categories = Category::all();
+
+        return view('index', compact('categories'));
+    }
+
+    public function confirm(ContactRequest $request)
+    {
+        $contact = $request;
+        $category = Category::find($contact->category_id);
+
+        return view('confirm', compact('contact', 'category'));
+    }
+
+    public function store(ContactRequest $request)
+    {
+        if ($request->input('back') == 'back') {
+            return redirect('/')->withInput();
+        }
+
+        $contact = $request->organize();
+        Contact::create($contact);
+
+        return redirect('/thanks');
+    }
+    
+    public function thanks()
+    {
+        return view('thanks');
     }
 
     public function admin()
